@@ -56,7 +56,7 @@
 
 Name:           icu4j
 Version:        4.0.1
-Release:        3.3%{?dist}
+Release:        3.3%{?dist}.goose.2
 Epoch:          1
 Summary:        International Components for Unicode for Java
 License:        MIT and EPL 
@@ -186,6 +186,12 @@ unzip -qq -d %{buildroot}/%{eclipse_base} eclipseProjects/ICU4J.com.ibm.icu/com.
 %endif
 
 %changelog
+* Tue Jan  3 2011 Clint Savage <herlo@gooseproject.org> - 1:4.0.1-3.3.goose.2
+- GoOSe Koji rebuild
+
+* Sun Jan  1 2011 Clint Savage <herlo@gooseproject.org> - 1:4.0.1-3.3.goose.1
+- Mock build for circular deps
+
 * Mon Jan 18 2010 Andrew Overholt <overholt@redhat.com> - 1:4.0.1-3.3
 - Fix Group tags
 - Remove macro in changelog
